@@ -20,7 +20,6 @@ Front-end: As MJ-Dangerous is a ML project, it is implemented in Python. The mod
 - numpy==1.18.5 
 
 # Set Up
-you’ll need to know how to setup the following to run the project:
 
 - Set up a virtual environment
 - Install anaconda
@@ -92,5 +91,5 @@ The RNN model consists of three layers:
 3) A Long Short-Term Memory (LSTM) layer : It may alternatively be used in place of this layer. 
 4) Result layer: It has the same number of units as the vocabulary size.
 
-## Future Implementations:
+## Future Implementations
 The lyrics can be later be passed on into a speech converter using wavenet to create a complete song, carrying the voice and words of MJ. 
