@@ -7,6 +7,7 @@ HeyJude is a song generating deep learning model that uses LSTM (Long Short Term
 2) System Requirements
 3) Set-up
 4) Project Flow 
+5) Future Implementations
 
 # Technologies Used 
 Front-end: As MJ-Dangerous is a ML project, it is implemented in Python. The model is trained in a corpus containing the song titles and the lyrics of many famous MJ songs using RNN and LSTM. So, given a sequence of words from MJ lyrics, it can predict the next words. 
@@ -105,10 +106,10 @@ RNNs, like most other forms of neural networks, require a starting state before 
 
 In order to assist the RNN by giving more context, the state that the RNN returns is then sent back to the input of the RNN. As it continues to make predictions, it trains more effectively because it has more context provided by the predicted words.The corpus (MJ lyrics.txt) comprises several MJ songs' titles and lyrics. I personally generated the corpus using the web lyrics that I discovered. 
 
-Training data require some preprocessing, as with practically any machine learning model, before they are ready to be utilised as a training input for the RNN. Initially, we preprocess the corpus via 
-Make all the letters lowercase. 
-Remove all white space 
-Remove all special characters, including "," "(," "")," "[," "]," etc.
+Training data require some preprocessing, as with practically any machine learning model, before they are ready to be utilised as a training input for the RNN. Initially, we preprocess the corpus via:
+- Make all the letters lowercase. 
+- Remove all white space 
+- Remove all special characters, including "," "(," "")," "[," "]," etc.
 
 Turning to the next word list once the text has been preprocessed, t he term "Tokenization" also applies to this process. 
 After that, we removed all the subsequent spaces or tabs from each word. Later, we identified the whole vocabulary that made up our dataset.  We then encode words as integers in order to train the model. The entire corpus is then represented as a list of numbers.
