@@ -69,37 +69,8 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
     
 
 ## Project Set Up 
-1) The system should have a python setup before setting up django. Installing a latest version of python ide is must.
-
-3) In the next step you need to install a virtualwrapper which is a virtual environment specifically to run this project. 
-In cmd create: 
-
-
-       pip install virtualenwrapper -win
-       
-Once you've created a virtual environment, and called workon to enter it, you can use pip3 to install Django :
-  
-  
-  
-       pip3 install django~=3.1
-  
-
-4) Create the virtual environment:
-  
-  
-       mkvirtualenv environment_name
-       
-6) Install Django :
-  
-  
-       pip install django
-       
-8) mkdir projects -> cd projects -> django-admin startproject projectname (Here projects is the name of the folder I created on my desktop)
-9) To run  the server :
-  
-  
-       python manage.py runserver
-       
+1) The system should have anaconda setup before setting up Jupyter Notebook.
+2) You can use Google colab if jupyter notebook is not handy. 
        
 ## Project Flow 
 RNNs, like most other forms of neural networks, require a starting state before they can begin the prediction. In this situation, the initialization is symbolised by a starting string that will serve as the beginning of the lyrics that are created. Using the beginning string and RNN state, the model calculates the probability distribution of the subsequent word. The predicted word is then utilised as the input for the following time step of the model after the index of the predicted word is determined using categorical distribution. 
