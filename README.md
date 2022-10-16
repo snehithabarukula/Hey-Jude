@@ -1,6 +1,6 @@
 # HeyJude
 # Introduction 
-HeyJude is a song generating deep learning model that uses LSTM (Long Short Term Memory), a specialised Recurrent Neural Network(RNN). It helps the fanatics of The Beatles band to be able to listen to songs that they would have made for us.Our aim is to create a trained model that is capable of generating lyrics similar to the previous lyrics of the famous pop singer MJ Michael Jackson. 
+HeyJude is a song generating deep learning model that uses LSTM (Long Short Term Memory), a specialised Recurrent Neural Network(RNN). It helps the fanatics of The Beatles band to be able to listen to songs that they would have made for us.Our aim is to create a trained model that is capable of generating lyrics similar to the previous lyrics of the famous pop group Beatles. 
 
 # Table of Contents
 1) Technologies Used
@@ -10,7 +10,7 @@ HeyJude is a song generating deep learning model that uses LSTM (Long Short Term
 5) Future Implementations
 
 # Technologies Used 
-Front-end: As MJ-Dangerous is a ML project, it is implemented in Python. The model is trained in a corpus containing the song titles and the lyrics of many famous MJ songs using RNN and LSTM. So, given a sequence of words from MJ lyrics, it can predict the next words. 
+Front-end: As Hey-Jude is a ML project, it is implemented in Python. The model is trained in a corpus containing the song titles and the lyrics of many famous Beatle songs using RNN and LSTM. So, given a sequence of words from Beatle's lyrics, it can predict the next words. 
 
 # System Requirements
 1) The system should have Jupyter Notebook or Google Colab to run the ML model.
@@ -25,7 +25,7 @@ Front-end: As MJ-Dangerous is a ML project, it is implemented in Python. The mod
 - Install anaconda
 - Pin your project dependencies
 - Set up Jupyter Notebook
-- Start mj.py 
+- Start lyricgenration.ipynb 
 
 
 ## Installing Python 
@@ -74,7 +74,7 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
 ## Project Flow 
 RNNs, like most other forms of neural networks, require a starting state before they can begin the prediction. In this situation, the initialization is symbolised by a starting string that will serve as the beginning of the lyrics that are created. Using the beginning string and RNN state, the model calculates the probability distribution of the subsequent word. The predicted word is then utilised as the input for the following time step of the model after the index of the predicted word is determined using categorical distribution. 
 
-In order to assist the RNN by giving more context, the state that the RNN returns is then sent back to the input of the RNN. As it continues to make predictions, it trains more effectively because it has more context provided by the predicted words.The corpus (MJ lyrics.txt) comprises several MJ songs' titles and lyrics. I personally generated the corpus using the web lyrics that I discovered. 
+In order to assist the RNN by giving more context, the state that the RNN returns is then sent back to the input of the RNN. As it continues to make predictions, it trains more effectively because it has more context provided by the predicted words.The corpus (PMP.txt) comprises several MJ songs' titles and lyrics. I personally generated the corpus using the web lyrics that I discovered. 
 
 Training data require some preprocessing, as with practically any machine learning model, before they are ready to be utilised as a training input for the RNN. Initially, we preprocess the corpus via:
 - Make all the letters lowercase. 
@@ -92,4 +92,5 @@ The RNN model consists of three layers:
 4) Result layer: It has the same number of units as the vocabulary size.
 
 ## Future Implementations
-The lyrics can be later be passed on into a speech converter using wavenet to create a complete song, carrying the voice and words of MJ. 
+1)The lyrics can be later be passed on into a speech converter using wavenet to create a complete song, carrying the voice and words of Beatles. 
+2)The model can be reused for the famous Micheal Jackson songs to generate lyrics by changing the data to MJ Lyrics.
