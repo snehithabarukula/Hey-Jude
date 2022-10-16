@@ -74,7 +74,7 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
 ## Project Flow 
 RNNs, like most other forms of neural networks, require a starting state before they can begin the prediction. In this situation, the initialization is symbolised by a starting string that will serve as the beginning of the lyrics that are created. Using the beginning string and RNN state, the model calculates the probability distribution of the subsequent word. The predicted word is then utilised as the input for the following time step of the model after the index of the predicted word is determined using categorical distribution. 
 
-In order to assist the RNN by giving more context, the state that the RNN returns is then sent back to the input of the RNN. As it continues to make predictions, it trains more effectively because it has more context provided by the predicted words.The corpus (PMP.txt) comprises several MJ songs' titles and lyrics. I personally generated the corpus using the web lyrics that I discovered. 
+In order to assist the RNN by giving more context, the state that the RNN returns is then sent back to the input of the RNN. As it continues to make predictions, it trains more effectively because it has more context provided by the predicted words.The corpus (PMP.txt) comprises several songs' titles and lyrics. I personally generated the corpus using the web lyrics that I discovered. 
 
 Training data require some preprocessing, as with practically any machine learning model, before they are ready to be utilised as a training input for the RNN. Initially, we preprocess the corpus via:
 - Make all the letters lowercase. 
