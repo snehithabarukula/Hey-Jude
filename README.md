@@ -88,9 +88,9 @@ After that, we removed all the subsequent spaces or tabs from each word. Late
 The RNN model consists of three layers: 
 1) Input Layer:  It converts the integer corresponding to each word into a vector whose dimensions are known.  
 2) Middle GRU layer: Gated Recurrent Units are referred to as GRUs. This layer precisely specifies how many units it includes.
-3) A Long Short-Term Memory (LSTM) layer : It may alternatively be used in place of this layer. 
-4) Result layer: It has the same number of units as the vocabulary size.
+3) A Long Short-Term Memory (LSTM) layer : It may alternatively be used in place of this layer. 
+4) Result layer: It has the same number of units as the vocabulary size.
 
 ## Future Implementations
-1)The lyrics can be later be passed on into a speech converter using wavenet to create a complete song, carrying the voice and words of Beatles. 
-2)The model can be reused for the famous Micheal Jackson songs to generate lyrics by changing the data to MJ Lyrics.
+1) The lyrics can be later be passed on into a speech converter using wavenet to create a complete song, carrying the voice and words of Beatles. 
+2) The model can be reused for the famous Micheal Jackson songs to generate lyrics by changing the data to MJ Lyrics.
